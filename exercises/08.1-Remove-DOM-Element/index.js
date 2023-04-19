@@ -1,3 +1,8 @@
-// your code here
-// if you check the HTML, you will find that the second LI has the id=secondElement
-// you can use that to your advantage as a CSS selector
+// Selecciona el elemento que deseas eliminar
+let secondElement = document.querySelector('#secondElement');
+
+// Selecciona el elemento padre (en este caso, la <ul>)
+let parentElement = secondElement.parentNode;
+
+// Elimina el elemento deseado de su padre
+parentElement.removeChild(secondElement);
